@@ -129,7 +129,7 @@ def compile_playable_podcast2(playable_podcast2):
         items.append({
             'label': podcast['title'],
             'thumbnail': podcast['thumbnail'],
-            'path': podcast['url'],
+            'path': podcast['href'],
             'info': podcast['desc'],
             'is_playable': True,
     })
