@@ -26,10 +26,10 @@
 			<fanart>resources/media/fanart.jpeg</fanart>
 			<screenshot>resources/media/RRAH.jpg</screenshot>
 			<screenshot>resources/media/SMHH.jpg</screenshot>
-			<screenshot>resources/media/3.jpeg</screenshot>
-			<screenshot>resources/media/4.jpeg</screenshot>
-			<screenshot>resources/media/6.jpeg</screenshot>
-			<screenshot>resources/media/7.jpeg</screenshot>
+			<screenshot>resources/media/3.jpg</screenshot>
+			<screenshot>resources/media/4.jpg</screenshot>
+			<screenshot>resources/media/6.jpg</screenshot>
+			<screenshot>resources/media/7.jpg</screenshot>
 		</assets>
   </extension>
 </addon>

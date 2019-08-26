@@ -42,4 +42,8 @@ msgctxt "#30006"
 msgid "The Zero Hour With RJ Eskow"
 msgstr ""
 
+msgctxt "#30007"
+msgid "Bradcast With Brad Friedman"
+msgstr ""
+
 # empty string with id 32003
