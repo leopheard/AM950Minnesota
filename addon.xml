@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.audio.AM950Minnesota" name="AM950 Minnesota" version="1.0.0" provider-name="leopheard">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.xbmcswift2" version="2.4.0"/>
     <import addon="script.module.beautifulsoup4" version="4.3.1"/>
     <import addon="script.module.requests" version="1.1.0"/>
@@ -14,11 +14,11 @@
     <platform>all</platform>
     <language></language>
     <summary lang="en">AM 950 Minnesota</summary>
-    <description lang="en">AM950 is the only Progressive Talk Radio station in Minnesota. We strive to provide the best progressive programming available. We feature national talkers Thom Hartmann, Stephanie Miller, Norman Goldman, Amy Goodman, David Pakman and Brad Friedman. We are also dedicated to local programming that creates a community forum for important Minnesota Progressive issues.</description>
+    <description lang="en">AM950 is the only Progressive Talk Radio station in Minnesota. We strive to provide the best progressive programming available. We feature national talkers Thom Hartmann, Stephanie Miller, Norman Goldman, Amy Goodman, David Pakman and Brad Friedman. We are also dedicated to local programming that creates a community forum for important Minnesota Progressive issues</description>
     <license>The MIT License (MIT)</license>
     <forum></forum>
     <email>leopheard@gmail.com</email>
-    <source>https://github.com/leopheard/AM950Minnesota.git</source>
+    <source>https://github.com/leopheard/AM950Minnesota</source>
     <website>http://www.am950radio.com/</website>
     <audio_guide></audio_guide>
         	<assets>
@@ -26,7 +26,10 @@
 			<fanart>resources/media/fanart.jpeg</fanart>
 			<screenshot>resources/media/RRAH.jpg</screenshot>
 			<screenshot>resources/media/SMHH.jpg</screenshot>
-			<screenshot>resources/media/icon.jpeg</screenshot>
+			<screenshot>resources/media/3.jpeg</screenshot>
+			<screenshot>resources/media/4.jpeg</screenshot>
+			<screenshot>resources/media/6.jpeg</screenshot>
+			<screenshot>resources/media/7.jpeg</screenshot>
 		</assets>
   </extension>
 </addon>
