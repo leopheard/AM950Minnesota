@@ -1,0 +1,9 @@
+__Version 1.0.0__
+1. Initial working version
+
+__Version 1.1.0__
+1. Added Atheists Talk
+2. Added Mission Accomplishers
+3. Added Best Of Interviews Feed
+4. Added Zero Hour with RJ Eskow
+5. Added Bradcast with Bradfriedman

@@ -13,7 +13,7 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <language></language>
-    <summary lang="en">AM 950 Minnesota</summary>
+    <summary lang="en">AM950 Minnesota</summary>
     <description lang="en">AM950 is the only Progressive Talk Radio station in Minnesota. We strive to provide the best progressive programming available. We feature national talkers Thom Hartmann, Stephanie Miller, Norman Goldman, Amy Goodman, David Pakman and Brad Friedman. We are also dedicated to local programming that creates a community forum for important Minnesota Progressive issues</description>
     <license>The MIT License (MIT)</license>
     <forum></forum>

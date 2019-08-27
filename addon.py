@@ -43,8 +43,8 @@ def main_menu():
             'path': plugin.url_for('all_episodes6'),
             'thumbnail': "https://ssl-static.libsyn.com/p/assets/8/a/b/1/8ab1668ee74fb2c0/logo-print_NEW.jpg"},
         {
-            'label': plugin.get_string(30006), 
-            'path': plugin.url_for('all_episodes6'),
+            'label': plugin.get_string(30007),
+            'path': plugin.url_for('all_episodes7'),
             'thumbnail': "http://bradblog.com/podcastgen/bradcast/images/itunes_image.jpg"},
     ]
     return items
