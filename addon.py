@@ -3,7 +3,7 @@ from resources.lib import mainaddon
 
 plugin = Plugin()
 url1 = "https://rss.art19.com/stephanie-millers-happy-hour-podcast"
-url2 = "https://next.podbay.fm/podcast/1458666669"
+url2 = "https://rss.art19.com/the-randi-rhodes-after-hours-podcast"
 url3 = "http://www.am950radio.com/category/podcasts/atheists-talk/feed/"
 url4 = "http://www.am950radio.com/category/podcasts/accomplishers/feed/"
 url5 = "http://www.am950radio.com/category/podcasts/best-of-interviews/feed/"

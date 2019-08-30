@@ -14,14 +14,14 @@ def get_soup2(url2):
     soup2 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup2))
     return soup2
-get_soup2("https://next.podbay.fm/podcast/1458666669")
+get_soup2("https://rss.art19.com/the-randi-rhodes-after-hours-podcast")
 
 def get_soup3(url3):
     page = requests.get(url3)
     soup3 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup3))
     return soup3
-get_soup3("http://www.am950radio.com/wp-content/uploads/2017/09/atheists.jpg")
+get_soup3("http://www.am950radio.com/category/podcasts/atheists-talk/feed/")
 
 def get_soup4(url4):
     page = requests.get(url4)
@@ -84,23 +84,20 @@ def compile_playable_podcast1(playable_podcast1):
 
 def get_playable_podcast2(soup2):
     subjects = []
-    for content in soup2.find_all('body'):
+    for content in soup2.find_all('item'):
         try:        
-            link = content.find('a')
-            link = link.get('href')
+            link = content.find('enclosure')
+            link = link.get('url')
             print("\n\nLink: ", link)
-            title = content.find('div', {'class': 'jsx-460898420 title'})
+            title = content.find('title')
             title = title.get_text()
-#            desc = content.find('div', {'class': 'jsx-460898420 description'})
-#            desc = desc.get_text()
-            thumbnail = content.find('div', {'class': 'jsx-460898420 download'})
+            thumbnail = content.find('itunes:image')
             thumbnail = thumbnail.get('href')
         except AttributeError:
             continue             
         item = {
-                'href': link,
+                'url': link,
                 'title': title,
-#                'desc': desc,
                 'thumbnail': thumbnail,
         }
         subjects.append(item)
@@ -111,8 +108,7 @@ def compile_playable_podcast2(playable_podcast2):
         items.append({
             'label': podcast['title'],
             'thumbnail': podcast['thumbnail'],
-            'path': podcast['href'],
-            'info': podcast['desc'],
+            'path': podcast['url'],
             'is_playable': True,
     })
     return items
