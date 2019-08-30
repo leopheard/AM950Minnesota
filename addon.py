@@ -2,13 +2,13 @@ from xbmcswift2 import Plugin, xbmcgui
 from resources.lib import mainaddon
 
 plugin = Plugin()
-URL1 = "https://rss.art19.com/stephanie-millers-happy-hour-podcast"
-URL2 = "https://next.podbay.fm/podcast/1458666669"
-URL3 = "http://www.am950radio.com/category/podcasts/atheists-talk/feed/"
-URL4 = "http://www.am950radio.com/category/podcasts/accomplishers/feed/"
-URL5 = "http://www.am950radio.com/category/podcasts/best-of-interviews/feed/"
-URL6 = "http://weactradio.libsyn.com/rss"
-URL7 = "https://www.bradblog.com/podcastgen/bradcast/feed.xml"
+url1 = "https://rss.art19.com/stephanie-millers-happy-hour-podcast"
+url2 = "https://next.podbay.fm/podcast/1458666669"
+url3 = "http://www.am950radio.com/category/podcasts/atheists-talk/feed/"
+url4 = "http://www.am950radio.com/category/podcasts/accomplishers/feed/"
+url5 = "http://www.am950radio.com/category/podcasts/best-of-interviews/feed/"
+url6 = "http://weactradio.libsyn.com/rss"
+url7 = "https://www.bradblog.com/podcastgen/bradcast/feed.xml"
 
 @plugin.route('/')
 def main_menu():
@@ -51,51 +51,51 @@ def main_menu():
 
 @plugin.route('/all_episodes1/')
 def all_episodes1():
-    soup1 = mainaddon.get_soup1(URL1)
+    soup1 = mainaddon.get_soup1(url1)
     playable_podcast1 = mainaddon.get_playable_podcast1(soup1)
     items = mainaddon.compile_playable_podcast1(playable_podcast1)
     return items
 
 @plugin.route('/all_episodes2/')
 def all_episodes2():
-    soup2 = mainaddon.get_soup2(URL2)
+    soup2 = mainaddon.get_soup2(url2)
     playable_podcast2 = mainaddon.get_playable_podcast2(soup2)
     items = mainaddon.compile_playable_podcast2(playable_podcast2)
     return items
 
 @plugin.route('/all_episodes3/')
 def all_episodes3():
-    soup3 = mainaddon.get_soup3(URL3)
+    soup3 = mainaddon.get_soup3(url3)
     playable_podcast3 = mainaddon.get_playable_podcast3(soup3)
     items = mainaddon.compile_playable_podcast3(playable_podcast3)
     return items
 
 @plugin.route('/all_episodes4/')
 def all_episodes4():
-    soup4 = mainaddon.get_soup4(URL4)
+    soup4 = mainaddon.get_soup4(url4)
     playable_podcast4 = mainaddon.get_playable_podcast4(soup4)
     items = mainaddon.compile_playable_podcast4(playable_podcast4)
     return items
 
 @plugin.route('/all_episodes5/')
 def all_episodes5():
-    soup5 = mainaddon.get_soup5(URL5)
-    playable_podcast5 = mainaddon.get_playable_podcast3(soup5)
+    soup5 = mainaddon.get_soup5(url5)
+    playable_podcast5 = mainaddon.get_playable_podcast5(soup5)
     items = mainaddon.compile_playable_podcast5(playable_podcast5)
     return items
 
 @plugin.route('/all_episodes6/')
 def all_episodes6():
-    soup6 = mainaddon.get_soup6(URL6)
+    soup6 = mainaddon.get_soup6(url6)
     playable_podcast6 = mainaddon.get_playable_podcast6(soup6)
     items = mainaddon.compile_playable_podcast6(playable_podcast6)
     return items
 
 @plugin.route('/all_episodes7/')
 def all_episodes7():
-    soup7 = mainaddon.get_soup6(URL7)
+    soup7 = mainaddon.get_soup7(url7)
     playable_podcast7 = mainaddon.get_playable_podcast7(soup7)
-    items = mainaddon.compile_playable_podcast6(playable_podcast7)
+    items = mainaddon.compile_playable_podcast7(playable_podcast7)
     return items
 
 if __name__ == '__main__':
