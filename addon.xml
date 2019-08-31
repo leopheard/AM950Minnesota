@@ -22,10 +22,10 @@
     <website>http://www.am950radio.com/</website>
     <audio_guide></audio_guide>
         	<assets>
-			<icon>resources/media/icon.jpeg</icon>
-			<fanart>resources/media/fanart.jpeg</fanart>
-			<screenshot>resources/media/RRAH.jpg</screenshot>
-			<screenshot>resources/media/SMHH.jpg</screenshot>
+			<icon>resources/media/icon.jpg</icon>
+			<fanart>resources/media/fanart.jpg</fanart>
+			<screenshot>resources/media/1.jpg</screenshot>
+			<screenshot>resources/media/2.jpg</screenshot>
 			<screenshot>resources/media/3.jpg</screenshot>
 			<screenshot>resources/media/4.jpg</screenshot>
 			<screenshot>resources/media/6.jpg</screenshot>
