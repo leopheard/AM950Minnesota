@@ -14,7 +14,7 @@ msgstr ""
 "Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgctxt "#10000"
+msgctxt "#30000"
 msgid "AM950 live stream"
 msgstr ""
 
@@ -44,6 +44,22 @@ msgstr ""
 
 msgctxt "#30007"
 msgid "Bradcast With Brad Friedman"
+msgstr ""
+
+msgctxt "#30008"
+msgid "The Hartmann Report"
+msgstr ""
+
+msgctxt "#30009"
+msgid "The Randi Rhodes"
+msgstr ""
+
+msgctxt "#30010"
+msgid "The David Pakman Show"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Democracy Now (audio)"
 msgstr ""
 
 # empty string with id 32003
