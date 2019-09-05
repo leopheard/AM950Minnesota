@@ -7,3 +7,7 @@ __Version 1.1.0__
 3. Added Best Of Interviews Feed
 4. Added Zero Hour with RJ Eskow
 5. Added Bradcast with Bradfriedman
+6. Added Thom Hartmann Show
+7. Added Randi Rhodes Show
+8. Added David Pakman Show
+9. Added Democracy Now audio
