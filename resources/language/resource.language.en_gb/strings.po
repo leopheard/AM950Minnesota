@@ -51,7 +51,7 @@ msgid "The Hartmann Report"
 msgstr ""
 
 msgctxt "#30009"
-msgid "The Randi Rhodes"
+msgid "The Randi Rhodes Show"
 msgstr ""
 
 msgctxt "#30010"

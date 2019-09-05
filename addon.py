@@ -27,13 +27,13 @@ def main_menu():
             'path': plugin.url_for('episodes9'),
             'thumbnail': "https://is1-ssl.mzstatic.com/image/thumb/Podcasts123/v4/4a/8c/26/4a8c26f3-736d-941f-e616-a9e9c61b0de1/mza_2910619107549141.jpg/600x600bb.jpg"},
         {
-            'label': plugin.get_string(30001), 
-            'path': plugin.url_for('episodes1'),
-            'thumbnail': "https://content.production.cdn.art19.com/images/5f/c5/af/0e/5fc5af0e-b096-4aa4-ace8-68153018dfe3/b6e871ec40e5529fc31fb1e93ecce7cb6fbebe3ef22a62c2b4691c22c973a7a986e6566916aedc6f6963957a73d68fe12ab842ee18dd7c7b76e052be5da2e23d.jpeg"},
-        {
             'label': plugin.get_string(30002), 
             'path': plugin.url_for('episodes2'),
             'thumbnail': "https://is5-ssl.mzstatic.com/image/thumb/Music123/v4/14/18/f0/1418f032-425f-8d31-9473-f310edf32d4b/source/400x400bb.jpg"},
+        {
+            'label': plugin.get_string(30001), 
+            'path': plugin.url_for('episodes1'),
+            'thumbnail': "https://content.production.cdn.art19.com/images/5f/c5/af/0e/5fc5af0e-b096-4aa4-ace8-68153018dfe3/b6e871ec40e5529fc31fb1e93ecce7cb6fbebe3ef22a62c2b4691c22c973a7a986e6566916aedc6f6963957a73d68fe12ab842ee18dd7c7b76e052be5da2e23d.jpeg"},
         {
             'label': plugin.get_string(30003), 
             'path': plugin.url_for('episodes3'),
@@ -140,10 +140,10 @@ def episodes10():
     return items
 
 @plugin.route('/episodes11/')
-def episodes10():
-    soup11 = mainaddon.get_soup10(url11)
+def episodes11():
+    soup11 = mainaddon.get_soup11(url11)
     playable_podcast11 = mainaddon.get_playable_podcast11(soup11)
-    items = mainaddon.compile_playable_podcast10(playable_podcast11)
+    items = mainaddon.compile_playable_podcast11(playable_podcast11)
     return items
 
 if __name__ == '__main__':
