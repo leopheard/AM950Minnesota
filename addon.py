@@ -59,11 +59,11 @@ def main_menu():
             'path': plugin.url_for('episodes8'),
             'thumbnail': "https://is2-ssl.mzstatic.com/image/thumb/Podcasts123/v4/61/16/2f/61162f9a-0e85-1706-d763-391945aa49a6/mza_6098482171161442518.jpeg/600x600bb.jpg"},
         {
-            'label': plugin.get_string(300010),
+            'label': plugin.get_string(30010),
             'path': plugin.url_for('episodes10'),
             'thumbnail': "http://static.libsyn.com/p/assets/7/2/8/0/72802e4963645d76/DPS_Podcast_new.jpg"},
         {
-            'label': plugin.get_string(300011),
+            'label': plugin.get_string(30011),
             'path': plugin.url_for('episodes11'),
             'thumbnail': "http://assets.democracynow.org/assets/DN-Podcast-AUDIO-1d5df65d8936dcfd1387274443b3e0713c5f15dd3fa400331229f4ab39b5c19e.jpg"},
     ]
