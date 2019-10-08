@@ -2,94 +2,61 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
-url1 = "https://rss.art19.com/stephanie-millers-happy-hour-podcast"
-url2 = "https://rss.art19.com/the-randi-rhodes-after-hours-podcast"
-url3 = "http://www.am950radio.com/category/podcasts/atheists-talk/feed/"
-url4 = "http://www.am950radio.com/category/podcasts/accomplishers/feed/"
-url5 = "http://www.am950radio.com/category/podcasts/best-of-interviews/feed/"
-url6 = "http://weactradio.libsyn.com/rss"
-url7 = "https://www.bradblog.com/podcastgen/bradcast/feed.xml"
-url8 = "https://rss.art19.com/the-hartmann-report"
-url9 = "http://feeds.soundcloud.com/users/soundcloud:users:69152263/sounds.rss"
-url10 = "http://feeds.feedburner.com/davidpakmanshow"
-url11 = "https://www.democracynow.org/podcast.xml"
-
 def get_soup1(url1):
     page = requests.get(url1)
     soup1 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup1))
     return soup1
-get_soup1("https://rss.art19.com/stephanie-millers-happy-hour-podcast")
-
 def get_soup2(url2):
     page = requests.get(url2)
     soup2 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup2))
     return soup2
-get_soup2("https://rss.art19.com/the-randi-rhodes-after-hours-podcast")
-
 def get_soup3(url3):
     page = requests.get(url3)
     soup3 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup3))
     return soup3
-get_soup3("http://www.am950radio.com/category/podcasts/atheists-talk/feed/")
-
 def get_soup4(url4):
     page = requests.get(url4)
     soup4 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup4))
     return soup4
-get_soup4("http://www.am950radio.com/category/podcasts/accomplishers/feed/")
-
 def get_soup5(url5):
     page = requests.get(url5)
     soup5 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup5))
     return soup5
-get_soup5("http://www.am950radio.com/category/podcasts/best-of-interviews/feed/")
-
 def get_soup6(url6):
     page = requests.get(url6)
     soup6 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup6))
     return soup6
-get_soup6("http://weactradio.libsyn.com/rss")
-
 def get_soup7(url7):
     page = requests.get(url7)
     soup7 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup7))
     return soup7
-get_soup7("https://www.bradblog.com/podcastgen/bradcast/feed.xml")
-
 def get_soup8(url8):
     page = requests.get(url8)
     soup8 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup8))
     return soup8
-get_soup8("https://rss.art19.com/the-hartmann-report")
-
 def get_soup9(url9):
     page = requests.get(url9)
     soup9 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup9))
     return soup9
-get_soup9("http://feeds.soundcloud.com/users/soundcloud:users:69152263/sounds.rss")
-
 def get_soup10(url10):
     page = requests.get(url10)
     soup10 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup10))
     return soup10
-get_soup10("http://feeds.feedburner.com/davidpakmanshow")
-
 def get_soup11(url11):
     page = requests.get(url11)
     soup11 = BeautifulSoup(page.text, 'html.parser')
     print("type: ", type(soup11))
     return soup11
-get_soup7("https://www.democracynow.org/podcast.xml")
 
 def get_playable_podcast1(soup1):
     subjects = []
@@ -100,8 +67,6 @@ def get_playable_podcast1(soup1):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-#            thumbnail = content.find('itunes:image')
-#            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
@@ -131,8 +96,6 @@ def get_playable_podcast2(soup2):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-#            thumbnail = content.find('itunes:image')
-#            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue             
         item = {
@@ -162,8 +125,6 @@ def get_playable_podcast3(soup3):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-#            thumbnail = content.find('itunes:image')
-#            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
@@ -193,8 +154,6 @@ def get_playable_podcast4(soup4):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-#            thumbnail = content.find('itunes:image')
-#            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
@@ -224,8 +183,6 @@ def get_playable_podcast5(soup5):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-#            thumbnail = content.find('itunes:image')
-#            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
@@ -255,8 +212,6 @@ def get_playable_podcast6(soup6):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-#            thumbnail = content.find('itunes:image')
-#            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
@@ -286,8 +241,6 @@ def get_playable_podcast7(soup7):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-#            thumbnail = content.find('itunes:image')
-#            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
@@ -317,8 +270,6 @@ def get_playable_podcast8(soup8):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-#            thumbnail = content.find('itunes:image')
-#            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
@@ -348,8 +299,6 @@ def get_playable_podcast9(soup9):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-#            thumbnail = content.find('itunes:image')
-#            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
@@ -379,8 +328,6 @@ def get_playable_podcast10(soup10):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-#            thumbnail = content.find('itunes:image')
-#            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
@@ -410,8 +357,6 @@ def get_playable_podcast11(soup11):
             print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-#            thumbnail = content.find('itunes:image')
-#            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {

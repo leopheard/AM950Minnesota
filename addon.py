@@ -18,7 +18,7 @@ url11 = "https://www.democracynow.org/podcast.xml"
 def main_menu():
     items = [
         {
-            'label': plugin.get_string(30000), 
+            'label': plugin.get_string(30000),
             'path': "http://am950radio.com/stream.m3u",
             'thumbnail': "http://www.am950radio.com/wp-content/uploads/2016/07/AM-simple-logo-white.png", 
             'is_playable': True},
@@ -68,83 +68,71 @@ def main_menu():
             'thumbnail': "http://assets.democracynow.org/assets/DN-Podcast-AUDIO-1d5df65d8936dcfd1387274443b3e0713c5f15dd3fa400331229f4ab39b5c19e.jpg"},
     ]
     return items
-
 @plugin.route('/episodes1/')
 def episodes1():
     soup1 = mainaddon.get_soup1(url1)
     playable_podcast1 = mainaddon.get_playable_podcast1(soup1)
     items = mainaddon.compile_playable_podcast1(playable_podcast1)
     return items
-
 @plugin.route('/episodes2/')
 def episodes2():
     soup2 = mainaddon.get_soup2(url2)
     playable_podcast2 = mainaddon.get_playable_podcast2(soup2)
     items = mainaddon.compile_playable_podcast2(playable_podcast2)
     return items
-
 @plugin.route('/episodes3/')
 def episodes3():
     soup3 = mainaddon.get_soup3(url3)
     playable_podcast3 = mainaddon.get_playable_podcast3(soup3)
     items = mainaddon.compile_playable_podcast3(playable_podcast3)
     return items
-
 @plugin.route('/episodes4/')
 def episodes4():
     soup4 = mainaddon.get_soup4(url4)
     playable_podcast4 = mainaddon.get_playable_podcast4(soup4)
     items = mainaddon.compile_playable_podcast4(playable_podcast4)
     return items
-
 @plugin.route('/episodes5/')
 def episodes5():
     soup5 = mainaddon.get_soup5(url5)
     playable_podcast5 = mainaddon.get_playable_podcast5(soup5)
     items = mainaddon.compile_playable_podcast5(playable_podcast5)
     return items
-
 @plugin.route('/episodes6/')
 def episodes6():
     soup6 = mainaddon.get_soup6(url6)
     playable_podcast6 = mainaddon.get_playable_podcast6(soup6)
     items = mainaddon.compile_playable_podcast6(playable_podcast6)
     return items
-
 @plugin.route('/episodes7/')
 def episodes7():
     soup7 = mainaddon.get_soup7(url7)
     playable_podcast7 = mainaddon.get_playable_podcast7(soup7)
     items = mainaddon.compile_playable_podcast7(playable_podcast7)
     return items
-
 @plugin.route('/episodes8/')
 def episodes8():
     soup8 = mainaddon.get_soup8(url8)
     playable_podcast8 = mainaddon.get_playable_podcast8(soup8)
     items = mainaddon.compile_playable_podcast8(playable_podcast8)
     return items
-
 @plugin.route('/episodes9/')
 def episodes9():
     soup9 = mainaddon.get_soup9(url9)
     playable_podcast9 = mainaddon.get_playable_podcast9(soup9)
     items = mainaddon.compile_playable_podcast9(playable_podcast9)
     return items
-
 @plugin.route('/episodes10/')
 def episodes10():
     soup10 = mainaddon.get_soup10(url10)
     playable_podcast10 = mainaddon.get_playable_podcast10(soup10)
     items = mainaddon.compile_playable_podcast10(playable_podcast10)
     return items
-
 @plugin.route('/episodes11/')
 def episodes11():
     soup11 = mainaddon.get_soup11(url11)
     playable_podcast11 = mainaddon.get_playable_podcast11(soup11)
     items = mainaddon.compile_playable_podcast11(playable_podcast11)
     return items
-
 if __name__ == '__main__':
     plugin.run()
